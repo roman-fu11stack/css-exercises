@@ -20,6 +20,45 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+}
+
+.right, .left {
+  display: flex;
+}
+
+.right {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.left {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-main {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-self: start;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.header {
+  flex: 1;
+  padding-right: 80px;
+}
+
+.btn-section {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  gap: 5px;
+  align-self: start;
 }
 
 .icon {
@@ -31,8 +70,9 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -54,6 +94,10 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.text {
+  margin-right: 20px;
 }
 
 button.continue {
